@@ -1,0 +1,7 @@
+<div id="form-container"><div id="form">
+<form (submit)="details()">
+    <input type="email" [(ngModel)] = "email" name="email" placeholder="Enter the email">
+    <button type = "submit">Find</button>
+</form>
+<div *ngIf="response"> {{ response | json }} </div>
+</div>

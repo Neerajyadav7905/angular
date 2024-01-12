@@ -1,0 +1,23 @@
+<div id="form-container"><div id="form">
+<form (submit)="signup()">
+    <table>
+        <tbody>
+            <tr><td></td><td><div *ngIf="response"> {{ response.message}} </div></td></tr>
+            <tr>
+                <td><label> Full Name : </label></td>
+                <td><input type="text" name="name" [(ngModel)]="user.name" placeholder="Enter the Full Name"></td>
+            </tr>
+            <tr>
+                <td><label> Email Add : </label></td>
+                <td><input type="Email" name="email" [(ngModel)]="user.email" placeholder="Enter the Email Address"></td>
+            </tr>
+            <tr><td><label> Password : </label></td>
+                <td><input type="password" name="password"  [(ngModel)]="user.password" placeholder="Create Password"></td>
+            </tr>
+            <tr><td></td></tr>
+            <tr><td></td><td><button type="Submit">Submit</button></td></tr>
+        </tbody>
+    </table>
+</form>
+</div>
+</div>

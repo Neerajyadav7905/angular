@@ -1,0 +1,22 @@
+#form {
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+  }
+
+  input {
+    padding: 3px;
+    margin: 5px 0px;
+    border-radius: 3px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  button {
+    font-size: 16px;
+    border-radius: 3px;
+    border: 2px solid black;
+    padding:3px;
+  }
